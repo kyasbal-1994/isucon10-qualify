@@ -16,7 +16,7 @@
 - name: Update v1.46.0(stable)
   become: yes
   become_user: isucon
-  command: /home/isucon/.cargo/bin/rustup update stable
+  command: /home/isucon/.cargo/bin/rustup toolchain install 1.46.0
 
 - name: Install Deno v1.3.2
   become: yes
